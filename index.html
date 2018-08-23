@@ -1,0 +1,532 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Sandbox</title>
+    <link rel="stylesheet" href="css/icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Site Title</li>
+                <li>
+                    <a href="#">One</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="row">
+
+        <!-- Heading -->
+        <h1>Heading <small>Secondary Text</small></h1>
+        <h2 class="subheader">Heading <small>Secondary Text</small></h2>
+
+        <!-- Paragraphs -->
+        <p>Lorem, <strong>ipsum dolor sit amet</strong> consectetur adipisicing elit. <em>Dolor reiciendis quaerat,</em>
+            optio, accusantium, eaque odio saepe voluptatum ipsam in assumenda <a href="#">fugiat mollitia?</a> Quod, culpa.</p>
+
+        <p class="lead">Lorem, <strong>ipsum dolor sit amet</strong> consectetur adipisicing elit. <em>Dolor reiciendis quaerat,</em>
+            optio, accusantium, eaque odio saepe voluptatum ipsam in assumenda <a href="#">fugiat mollitia?</a> Quod, culpa.</p>
+
+        <p>Server Up-Time</p>
+        <div class="stat">230</div>
+
+        <hr>
+
+        <!-- Alignment Classes -->
+        <p class="text-left">Left-Aligned text.</p>
+        <p class="text-center">Center-Aligned text.</p>
+        <p class="text-right">Right-Aligned text.</p>
+        <p class="text-justify">Justified text.</p>
+
+        <!-- Float classes -->
+        <div class="callout clearfix">
+            <a href="" class="button float-left">Left</a>
+            <a href="" class="button float-right">Right</a>
+        </div>
+
+        <hr>
+
+        <!-- Code -->
+        <code>&lt;div class="myClass"&gt;Hello World&lt;/div&gt;</code>
+        <p>Press <kbd>Cmd+r</kbd> (or <kbd>Ctrl+r</kbd> on Windows)</p>
+
+        <hr>
+
+        <!-- Blockquote -->
+        <blockquote>
+            This is a blockquote from foundation
+            <cite>John Doe</cite>
+        </blockquote>
+
+        <!-- Lists -->
+        <div class="callout clearfix">
+            <ul class="float-left no-bullet">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three
+                    <ul class="no-bullet">
+                        <li>Nested Item</li>
+                        <li>Nested Item</li>
+                        <li>Nested Item</li>
+                    </ul>
+                </li>
+                <li>Item Four</li>
+            </ul>
+
+            <ol class="float-left">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three
+                    <ul>
+                        <li>Nested Item</li>
+                        <li>Nested Item</li>
+                        <li>Nested Item</li>
+                    </ul>
+                </li>
+                <li>Item Four</li>
+            </ol>
+        </div>
+
+        <!-- Visibility -->
+        <p class="hide">Hidden</p>
+        <p class="invisible">Invisible</p>
+        <p>You are on a small screen or larger</p>
+        <p class="show-for-medium">You are on a medium screen or larger</p>
+        <p class="show-for-large">You are on a large screen or larger</p>
+        <p class="hide-for-small-only">You are not on a small screen.</p>
+        <p class="hide-for-medium-only">You are not on a medium screen.</p>
+        <p class="hide-for-large-only">You are not on a large screen.</p>
+        <p class="show-for-lanscape">You are in landscape</p>
+        <p class="show-for-portrait">You are in portrait</p>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <!-- Buttons -->
+        <button class="button">Button</button>
+        <a href="#" class="button">Link</a>
+        <input type="submit" class="button" value="Submit">
+        <input type="button" class="button" value="Button">
+
+        <br>
+
+        <!-- Colored Buttons -->
+        <button class="button success">Success</button>
+        <button class="button alert">Alert</button>
+        <button class="button warning">Warning</button>
+        <button class="button secondary">Secondary</button>
+        <button class="button disabled">Disablred</button>
+
+        <br>
+
+        <!-- Sizes -->
+        <button class="button tiny">Button</button>
+        <button class="button small">Button</button>
+        <button class="button default">Button</button>
+        <button class="button large">Button</button>
+        <button class="button expanded">Button</button>
+
+        <br>
+
+        <!-- Hollow buttons -->
+        <button class="button hollow success">Success</button>
+        <button class="button hollow alert">Alert</button>
+        <button class="button hollow warning">Warning</button>
+        <button class="button hollow secondary">Secondary</button>
+        <button class="button hollow disabled">Disablred</button>
+    </div>
+
+    <div class="row">
+        <!-- Forms -->
+        <form>
+            <div>
+                <label>Name</label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="email">
+            </div>
+            <div>
+                <label>Number</label>
+                <input type="number" placeholder="number">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Gender</label>
+                <select>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label>Gender</label>
+                <select multiple>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <fieldset class="fieldset">
+                    <legend>A Fieldset</legend>
+                    <input type="checkbox"><label>Checkbox</label>
+                    <input type="checkbox"><label>Checkbox</label>
+                    <input type="checkbox"><label>Checkbox</label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="fileUpload" class="button">Upload File</label>
+                <input type="file" id="fileUpload" class="show-for-sr">
+            </div>
+
+            <label>Password</label>
+            <input type="password">
+            <p class="help-text">Your password must be 8 characters or more</p>
+
+            <div class="input-group">
+                <span class="input-group-label">@</span>
+                <input class="input-group-field" type="email">
+                <div class="input-group-button">
+                    <input type="submit" class="button" value="Submit">
+                </div>
+            </div>
+
+            <div class="switch">
+                <input class="switch-input" id="mySwitch" type="checkbox" name="exampleSwitch">
+                <label for="mySwitch" class="switch-paddle">
+                    <span class="show-for-sr">Enabled</span>
+                </label>
+            </div>
+
+            <div class="slider" data-slider data-initial-start='0' data-end='20'>
+                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+                <input type="hidden" id="sliderValue">
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Tables -->
+        <table class="hover stack table-scroll">
+            <tr>
+                <td>Fristanme</td>
+                <td>Lastname</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Stephanie</td>
+                <td>Smith</td>
+                <td>24</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Menu -->
+        <ul class="menu">
+            <li class="menu-text">Menu Title</li>
+            <li><a href="#">Link 1</a></li>
+            <li class="active"><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+
+        <ul class="menu vertical">
+            <li class="menu-text">Vertical Title</li>
+            <li><a href="#">Link 1</a></li>
+            <li class="active"><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+
+        <ul class="menu simple">
+            <li class="menu-text">Simple Title</li>
+            <li><a href="#">Link 1</a></li>
+            <li class="active"><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Icons -->
+        <ul class="no-bullet">
+            <li><a href="#"><i class="fi-list"></i> <span>One</span></a></li>
+            <li><a href="#"><i class="fi-star"></i> <span>Two</span></a></li>
+            <li><a href="#"><i class="fi-cloud"></i> <span>Three</span></a></li>
+            <li><a href="#"><i class="fi-archive"></i> <span>Four</span></a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Callouts -->
+        <div class="callout">
+            <p>This is example of a callout</p>
+        </div>
+        <div class="callout secondary">
+            <p>This is example of a callout</p>
+        </div>
+        <div class="callout success">
+            <p>This is example of a callout</p>
+        </div>
+        <div class="callout warning">
+            <p>This is example of a callout</p>
+        </div>
+        <div class="callout alert">
+            <p>This is example of a callout</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <!-- Progress Bars -->
+        <div class="success progress" role="progressbar">
+            <div class="progress-meter" style="width: 25%">
+                <p class="progress-meter-text">25%</p>
+            </div>
+        </div>
+        <div class="alert progress" role="progressbar">
+            <div class="progress-meter" style="width: 90%">
+                <p class="progress-meter-text">90%</p>
+            </div>
+        </div>
+        <div class="warning progress" role="progressbar">
+            <div class="progress-meter" style="width: 70%">
+                <p class="progress-meter-text">70%</p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Labels -->
+        <span class="secondary label">Secondary Label</span>
+        <span class="success label">Success Label</span>
+        <span class="warning label">Warning Label</span>
+        <span class="alert label">Alert Label</span>
+
+        <hr>
+
+        <!-- Badges -->
+        <span class="secondary badge">10</span>
+        <span class="success badge">2</span>
+        <span class="warning badge">112</span>
+        <span class="alert badge">3</span>
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+        <!-- Breadcrubms -->
+        <nav role="navigation">
+            <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li class="disabled">disabled text</li>
+                <li><a href="#">Posts</a></li>
+                <li>My post</li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <!-- Pagination -->
+        <ul class="pagination" role="navigation">
+            <li class="disabled">0</li>
+            <li class="current">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="ellipsis"></li>
+            <li><a href="#">12</a></li>
+            <li><a href="#">13</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- Grid -->
+    <div class="grid-x">
+        <div class="cell">full width cell</div>
+        <div class="cell">full width cell</div>
+    </div>
+    <div class="grid-x">
+        <div class="cell small-6">6 cells</div>
+        <div class="cell small-6">6 cells</div>
+    </div>
+    <div class="grid-x">
+        <div class="cell medium-6 large-4">12/6/4 cells</div>
+        <div class="cell medium-6 large-8">12/6/8 cells</div>
+    </div>
+    <div class="grid-x">
+        <div class="cell medium-3 large-3">3 cells</div>
+        <div class="cell medium-3 large-3">3 cells</div>
+        <div class="cell medium-3 large-3">3 cells</div>
+        <div class="cell medium-3 large-3">3 cells</div>
+    </div>
+
+    <div class="grid-x">
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+        <div class="cell medium-1 large-1">1 cells</div>
+    </div>
+
+    <div class="grid-x">
+        <div class="cell large-10 large-offset-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia est dolorum deleniti vitae ducimus.
+                Necessitatibus inventore eaque delectus voluptatibus, voluptate illo totam ipsum, nam labore architecto officia
+                dolorum distinctio.</p>
+        </div>
+    </div>
+
+    <!-- Card -->
+    <div class="card" style="width: 300px;">
+        <div class="card-divider">
+            This is a header
+        </div>
+        <img src="http://foundation.zurb.com/sites/docs/assets/img/generic/rectangle-1.jpg">
+        <div class="card-section">
+            <h4>This is a card.</h4>
+            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+    </div>
+
+    <!-- Media Object -->
+    <div class="media-object">
+        <div class="media-object-section">
+            <div class="thumbnail">
+                <img src="https://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg">
+            </div>
+        </div>
+        <div class="media-object-section">
+            <h4>Dreams feel real while we're in them.</h4>
+            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is
+                like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define
+                or destroy you.</p>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Accordion 1</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Accordion 1</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Accordion 1</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Tabs -->
+    <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
